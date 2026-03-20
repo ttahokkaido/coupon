@@ -1,5 +1,5 @@
 const coupons = [
-  { id: 1,  name: '永旺超市',      nameEN: 'AEON',              category: 'supermarket', file: 'AEON.jpg',
+  { id: 1,  name: '永旺超市',      nameEN: 'AEON',              category: 'supermarket', file: 'aeon.jpg',
     rules: [
       '請於收銀台結算時出示此優惠券。',
       '掃描優惠券上的條碼，即可打 95 折。',
@@ -8,7 +8,7 @@ const coupons = [
       '不可與其他優惠同時使用 (不能列印及截圖使用)。',
       '不適用：書包、啤酒、氣泡酒、低濃度酒精飲料、書籍、雜誌、遊戲機、香菸、郵票、商品券、化妝品等、餐廳。'
     ] },
-  { id: 2,  name: '必酷相機',      nameEN: 'Bic Camera',        category: 'electronics', file: 'Bic Camera.jpg',
+  { id: 2,  name: '必酷相機',      nameEN: 'Bic Camera',        category: 'electronics', file: 'bic_camera.jpg',
     rules: [
       '部分商品消費稅為 8 %。本優惠券僅限於免稅結帳時使用。',
       '蘋果商品、進口品牌手錶、Grand Seiko 系列商品、各遊戲主機及官方配件、遊戲軟體不適用。',
@@ -17,7 +17,7 @@ const coupons = [
       '酒類商品（威士忌、獺祭、八海山除外）可享免稅 + 3% OFF 折扣 (只能於酒類專櫃結帳)。',
       '本優惠券不能與其他優惠活動、折扣券同時使用。持有日本護照辦理一時歸國免稅也可使用。'
     ] },
-  { id: 3,  name: '可可卡精品藥妝', nameEN: 'Cocokara Fine',     category: 'pharmacy',    file: 'Cocokara Fine.jpg',
+  { id: 3,  name: '可可卡精品藥妝', nameEN: 'Cocokara Fine',     category: 'pharmacy',    file: 'cocokara_fine.jpg',
     rules: [
       '1萬日圓～未滿3萬享 3% OFF。3萬日圓～未滿5萬享 5% OFF。5萬日圓以上享 7% OFF。',
       '結帳前出示 QR 碼即可享受折扣，此優惠券不能與其他折扣或活動同時使用。',
@@ -25,7 +25,7 @@ const coupons = [
       '截圖、列印等方式均不可使用。僅限日本本地實體店鋪使用。',
       '根據法律規定只有藥劑師在場的情況下，才可購買第一類醫藥品。'
     ] },
-  { id: 4,  name: '宇宙藥妝',      nameEN: 'Drugstore COSMOS',  category: 'pharmacy',    file: 'Drugstore COSMOS.png',
+  { id: 4,  name: '宇宙藥妝',      nameEN: 'Drugstore COSMOS',  category: 'pharmacy',    file: 'drugstore_cosmos.png',
     rules: [
       '10,000日圓～29,999日圓享 5% OFF。30,000日圓～49,999日圓享 7% OFF。50,000日圓以上享 9% OFF。',
       '此優惠券每天只能使用一次，不能與其他優惠券同時使用。',
@@ -34,7 +34,7 @@ const coupons = [
       '如果沒有藥劑師在場，一級藥品和需要指導的藥品就不能銷售。',
       '付款後，無法退貨或換貨。只能在免稅購買時使用。'
     ] },
-  { id: 5,  name: '宜電家電',      nameEN: 'Edion',             category: 'electronics', file: 'Edion.jpg',
+  { id: 5,  name: '宜電家電',      nameEN: 'Edion',             category: 'electronics', file: 'edion.jpg',
     rules: [
       '免稅10% + 最高7% OFF 或 5% OFF。請在結帳前向工作人員出示優惠券。',
       '7% OFF 對象：家電產品、手錶、相機、不銹鋼真空杯等。',
@@ -43,7 +43,7 @@ const coupons = [
       '消耗品除外的一般商品，購買金額達 5,000日圓以上可享免稅。',
       'DM掲載品、日替品、台數限定品、清倉品、手機、Surface、Apple、PC等部分商品不在折扣列。'
     ] },
-  { id: 6,  name: '樂天百貨',      nameEN: 'LOTTE',             category: 'department',  file: 'LOTTE_COUPON.jpg',
+  { id: 6,  name: '樂天百貨',      nameEN: 'LOTTE',             category: 'department',  file: 'lotte.jpg',
     rules: [
       '購物滿10,000日圓折1,000日圓。滿20,000日圓折2,000日圓。',
       '本優惠券僅限於樂天免稅銀座店（Lotte Duty Free Ginza）使用。',
@@ -52,7 +52,7 @@ const coupons = [
       '本優惠券不可用於購買折扣商品。',
       '本優惠券不可用於部分免稅商品及特定品牌商品。'
     ] },
-  { id: 7,  name: '崇光西武百貨',  nameEN: 'SOGO SEIBU',        category: 'department',  file: 'SOGO SEIBU.jpg',
+  { id: 7,  name: '崇光西武百貨',  nameEN: 'SOGO SEIBU',        category: 'department',  file: 'sogo_seibu.jpg',
     rules: [
       '凡於日本西武・SOGO百貨指定店鋪消費滿1,000日圓(不含稅)及以上，即可享 95 折優惠。',
       '結帳前請將此優惠券 QR 碼畫面與本人護照出示給店員。',
@@ -61,7 +61,7 @@ const coupons = [
       '購物金額(不含消費稅)的不足100日圓的部分，不參與折扣計算。',
       '恕無法與本公司其他折扣、點數服務並用。95折優惠購買之商品恕無法更換退貨。'
     ] },
-  { id: 8,  name: '三德藥妝',      nameEN: 'SUNDRUG',           category: 'pharmacy',    file: 'SUNDRUG.png',
+  { id: 8,  name: '三德藥妝',      nameEN: 'SUNDRUG',           category: 'pharmacy',    file: 'sundrug.png',
     rules: [
       '免稅10% + 3% OFF (消費1萬日圓以上)',
       '免稅10% + 5% OFF (消費3萬日圓以上)',
@@ -70,7 +70,7 @@ const coupons = [
       '請在櫃台結算時出示此畫面。不能和其他優惠一起使用。',
       '此優惠券只適用於免稅結算。本公司旗下的 Direx 店鋪不參加此活動。'
     ] },
-  { id: 9,  name: '近鐵百貨',      nameEN: 'Kintetsu',          category: 'department',  file: 'kintetsu_Coupon-W125.jpg',
+  { id: 9,  name: '近鐵百貨',      nameEN: 'Kintetsu',          category: 'department',  file: 'kintetsu.jpg',
     rules: [
       '一次購物滿2000日圓(不含稅)以上時，可享 95折優惠。請在購物及退稅時出示本券。',
       '本券可在使用電子支付、現金、各種信用卡付款時使用。不可同時使用其他優惠券。',
@@ -78,7 +78,7 @@ const coupons = [
       '適用店鋪：海闊天空總店、上本町店、和歌山店、橿原店、奈良店、四日市店、生駒店、草津店。',
       '在近鐵百貨海闊天空總店辦理退稅手續時出示本優惠券的顧客，將獲贈品牌手帕一枚。'
     ] },
-  { id: 10, name: '大丸百貨',      nameEN: 'Daimaru',           category: 'department',  file: '大丸百貨.jpg',
+  { id: 10, name: '大丸百貨',      nameEN: 'Daimaru',           category: 'department',  file: 'daimaru.jpg',
     rules: [
       '購物時享有9.5折優惠。購物金額必須滿3,000日圓(含稅)以上。',
       '9.5折優惠不適用於國際精品館、手錶專櫃、食品及特價品等賣場。',
@@ -86,7 +86,7 @@ const coupons = [
       '出示本畫面時，請務必出示本人的護照。僅限本人及入境未滿6個月的外國籍顧客使用。',
       '僅能以現金或在大丸・松坂屋使用的禮券、銀聯卡、信用卡、行動支付購買原價商品時適用。'
     ] },
-  { id: 11, name: '松本清藥妝',    nameEN: 'Matsumoto Kiyoshi', category: 'pharmacy',    file: '松本清.jpg',
+  { id: 11, name: '松本清藥妝',    nameEN: 'Matsumoto Kiyoshi', category: 'pharmacy',    file: 'matsukiyo.jpg',
     rules: [
       '免稅 + 3% OFF (1萬～3萬日圓)',
       '免稅 + 5% OFF (3萬～5萬日圓)',
@@ -95,7 +95,7 @@ const coupons = [
       '此優惠券可與外國旅客享有的10%免稅福利合併使用。',
       '折扣對象外商品：高級化妝品之專櫃商品、香菸、雜誌、POSA儲值卡、指定垃圾袋、尿布、嬰兒食品等。'
     ] },
-  { id: 12, name: '鶴羽藥妝',      nameEN: 'Tsuruha Drug',      category: 'pharmacy',    file: '鶴羽.png',
+  { id: 12, name: '鶴羽藥妝',      nameEN: 'Tsuruha Drug',      category: 'pharmacy',    file: 'tsuruha.png',
     rules: [
       '10,000日圓～29,999日圓享 免稅10% + 3% OFF。',
       '30,000日圓～49,999日圓享 免稅10% + 5% OFF。',
@@ -220,6 +220,8 @@ function closeLightbox() {
 function updateLightbox() {
   const c    = filteredList[lightboxIndex];
   const used = usedSet.has(c.id);
+  lbImg.style.opacity = '0'; // Hide immediately to prevent flashing old image
+  lbImg.onload = () => { lbImg.style.opacity = '1'; }; // Show when loaded
   lbImg.src          = encodeURIComponent(c.file);
   lbImg.alt          = c.name;
   lbTitle.textContent = c.name;
