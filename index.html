@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0d0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>北海道OPEN桑 - 優惠券存摺</title>
+  <meta name="description" content="日本旅行優惠券隨身存摺，輕鬆管理各大百貨、藥妝、家電優惠券">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-mark">🎫</div>
+      <div class="header-titles">
+        <h1>北海道OPEN桑 - 優惠券存摺</h1>
+        <p class="subtitle">Japan Coupon Book</p>
+      </div>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="tabs-wrap">
+      <div id="category-tabs"></div>
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────── -->
+  <main>
+    <p class="counter" id="counter"></p>
+    <div class="coupon-list" id="coupon-list"></div>
+  </main>
+
+  <!-- ── Lightbox ───────────────────────────────────────── -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="優惠券詳細">
+
+    <div class="lb-header">
+      <div class="lb-titles">
+        <p id="lb-title"></p>
+        <p id="lb-sub"></p>
+      </div>
+      <button id="lb-close" aria-label="關閉">✕</button>
+    </div>
+
+    <div class="lb-img-wrap">
+      <button id="lb-prev" class="lb-nav" aria-label="上一張">‹</button>
+      <img id="lb-img" src="" alt="">
+      <button id="lb-next" class="lb-nav" aria-label="下一張">›</button>
+    </div>
+
+    <div class="lb-footer">
+      <button id="lb-used-btn" class="lb-used-btn">標記為已使用</button>
+    </div>
+
+  </div>
+
+  <!-- ── Rules Sheet ──────────────────────────────────────── -->
+  <div id="rules-overlay" class="rules-overlay">
+    <div class="rules-sheet" id="rules-sheet" role="dialog" aria-modal="true">
+      <div class="rules-handle"></div>
+      <div class="rules-header">
+        <span id="rules-icon" class="rules-title-icon"></span>
+        <p id="rules-title">使用規範</p>
+        <button id="rules-close" aria-label="關閉">✕</button>
+      </div>
+      <ul class="rules-list" id="rules-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
