@@ -5,8 +5,8 @@ const coupons = [
       '掃描優惠券上的條碼，即可打 95 折。',
       '本優惠券僅限來訪日本的外國遊客使用。',
       '本券在日本 AEON/AEON STYLE 店鋪可以使用 (北海道 / 東北 / 九州 / 沖繩地區除外)。',
-      '不可與其他優惠同時使用 (不能印刷及截圖使用)。',
-      '不適用：書包、啤酒、氣泡酒、低濃度酒精飲料、書籍、雜誌、遊戲機、香菸、郵票、商品券、化妝品詢、餐廳。'
+      '不可與其他優惠同時使用 (不能列印及截圖使用)。',
+      '不適用：書包、啤酒、氣泡酒、低濃度酒精飲料、書籍、雜誌、遊戲機、香菸、郵票、商品券、化妝品等、餐廳。'
     ] },
   { id: 2,  name: '必酷相機',      nameEN: 'Bic Camera',        category: 'electronics', file: 'Bic Camera.jpg',
     rules: [
@@ -20,7 +20,7 @@ const coupons = [
   { id: 3,  name: '可可卡精品藥妝', nameEN: 'Cocokara Fine',     category: 'pharmacy',    file: 'Cocokara Fine.jpg',
     rules: [
       '1萬日圓～未滿3萬享 3% OFF。3萬日圓～未滿5萬享 5% OFF。5萬日圓以上享 7% OFF。',
-      '結帳前出示二維碼即可享受折扣，此優惠券不能與其他折扣或活動同時使用。',
+      '結帳前出示 QR 碼即可享受折扣，此優惠券不能與其他折扣或活動同時使用。',
       '高級化妝品（提供皮膚諮詢服務）、香菸、雜誌、酒類、指定垃圾袋、尿布、嬰兒食品等不在範圍內。',
       '截圖、列印等方式均不可使用。僅限日本本地實體店鋪使用。',
       '根據法律規定只有藥劑師在場的情況下，才可購買第一類醫藥品。'
@@ -46,20 +46,20 @@ const coupons = [
   { id: 6,  name: '樂天百貨',      nameEN: 'LOTTE',             category: 'department',  file: 'LOTTE_COUPON.jpg',
     rules: [
       '購物滿10,000日圓折1,000日圓。滿20,000日圓折2,000日圓。',
-      'This coupon can only be used at the Lotte Duty Free Ginza.',
-      'This coupon can only be used once per departure.',
-      'This coupon cannot be combined with other coupons or gift vouchers.',
-      'This coupon cannot be used for the purchase of discounted items.',
-      'This coupon cannot be used for TAX-FREE items and some (certain) brand items.'
+      '本優惠券僅限於樂天免稅銀座店（Lotte Duty Free Ginza）使用。',
+      '每次出境限用一次此優惠券。',
+      '本優惠券不可與其他優惠券或禮品券合併使用。',
+      '本優惠券不可用於購買折扣商品。',
+      '本優惠券不可用於部分免稅商品及特定品牌商品。'
     ] },
   { id: 7,  name: '崇光西武百貨',  nameEN: 'SOGO SEIBU',        category: 'department',  file: 'SOGO SEIBU.jpg',
     rules: [
       '凡於日本西武・SOGO百貨指定店鋪消費滿1,000日圓(不含稅)及以上，即可享 95 折優惠。',
-      '結帳前請將此優惠券二維碼畫面與本人護照出示給店員。',
-      '折扣對象外：商品券、禮券、香煙、郵票印花類、金塊銀塊、食品、降價打折品、專賣店、餐廳及咖啡廳。',
+      '結帳前請將此優惠券 QR 碼畫面與本人護照出示給店員。',
+      '不適用折扣對象：商品券、禮券、香菸、郵票印花類、金塊銀塊、食品、降價打折品、專賣店、餐廳及咖啡廳。',
       'Louis Vuitton, Hermes, Celine, Chanel, Rolex等指定品牌不適用折扣。',
       '購物金額(不含消費稅)的不足100日圓的部分，不參與折扣計算。',
-      '恕無法與本公司其他折扣、積分服務並用。95折優惠購買之商品恕無法更換退貨。'
+      '恕無法與本公司其他折扣、點數服務並用。95折優惠購買之商品恕無法更換退貨。'
     ] },
   { id: 8,  name: '三德藥妝',      nameEN: 'SUNDRUG',           category: 'pharmacy',    file: 'SUNDRUG.png',
     rules: [
