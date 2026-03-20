@@ -220,9 +220,10 @@ function closeLightbox() {
 function updateLightbox() {
   const c    = filteredList[lightboxIndex];
   const used = usedSet.has(c.id);
-  lbImg.style.opacity = '0'; // Hide immediately to prevent flashing old image
+  lbImg.style.opacity = '0';
   lbImg.onload = () => { lbImg.style.opacity = '1'; }; // Show when loaded
   lbImg.src          = encodeURIComponent(c.file);
+  if (lbImg.complete) { lbImg.style.opacity = '1'; } // For cached images
   lbImg.alt          = c.name;
   lbTitle.textContent = c.name;
   lbSub.textContent   = c.nameEN + ' ／ ' + categoryLabels[c.category];
