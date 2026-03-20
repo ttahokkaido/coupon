@@ -9,17 +9,15 @@
   <title>北海道OPEN桑 - 優惠券存摺</title>
   <meta name="description" content="日本旅行優惠券隨身存摺，輕鬆管理各大百貨、藥妝、家電優惠券">
   <link rel="stylesheet" href="style.css?v=1.1">
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script>
-    (function() {
-      var urlParams = new URLSearchParams(window.location.search);
-      var ua = navigator.userAgent || navigator.vendor || window.opera;
-      var isLineApp = (ua.indexOf("Line") > -1) || (ua.indexOf("LINE") > -1);
-      var isLiff = document.referrer.includes('liff.line.me') || urlParams.has('liff.state') || isLineApp;
-      if (isLiff) sessionStorage.setItem('fromLiff', 'true');
-      if (sessionStorage.getItem('fromLiff') !== 'true') {
-        window.location.replace('https://tahokkaido.com/line-friend/');
-      }
-    })();
+    document.addEventListener("DOMContentLoaded", function() {
+      liff.init({ liffId: "2008400942-4CZ4NyPM" }).then(function() {
+        if (!liff.isInClient() && !liff.isLoggedIn()) {
+          window.location.replace('https://tahokkaido.com/line-friend/');
+        }
+      }).catch(function(err) {});
+    });
   </script>
 </head>
 <body>
