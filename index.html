@@ -12,7 +12,9 @@
   <script>
     (function() {
       var urlParams = new URLSearchParams(window.location.search);
-      var isLiff = document.referrer.includes('liff.line.me') || urlParams.has('liff.state');
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isLineApp = (ua.indexOf("Line") > -1) || (ua.indexOf("LINE") > -1);
+      var isLiff = document.referrer.includes('liff.line.me') || urlParams.has('liff.state') || isLineApp;
       if (isLiff) sessionStorage.setItem('fromLiff', 'true');
       if (sessionStorage.getItem('fromLiff') !== 'true') {
         window.location.replace('https://tahokkaido.com/line-friend/');
