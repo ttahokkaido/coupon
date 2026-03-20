@@ -356,5 +356,13 @@ lbImg.addEventListener('touchend', e => {
 }, { passive: true });
 
 // ─── Init ────────────────────────────────────────────────────
+function preloadImages() {
+  coupons.forEach(c => {
+    const img = new Image();
+    img.src = encodeURIComponent(c.file);
+  });
+}
+
 buildTabs();
 render();
+setTimeout(preloadImages, 500); // 延遲500ms背景載入，避免卡住主畫面
