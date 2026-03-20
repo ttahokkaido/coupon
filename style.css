@@ -228,21 +228,6 @@ main { padding: 10px 12px 100px; }
 }
 #lb-img:active { cursor: grabbing; }
 
-/* Nav arrows */
-.lb-nav {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  width: 38px; height: 38px; border-radius: 50%;
-  background: rgba(255,255,255,.85); border: 1px solid var(--border);
-  color: var(--text); font-size: 20px; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all var(--tr); backdrop-filter: blur(6px);
-  box-shadow: 0 4px 12px rgba(0,0,0,.1);
-}
-.lb-nav:disabled { opacity: .2; pointer-events: none; }
-.lb-nav:not(:disabled):hover { border-color: rgba(192,57,43,.5); }
-#lb-prev { left: 8px; }
-#lb-next { right: 8px; }
-
 /* Footer */
 .lb-footer {
   width: 100%; padding: 12px 20px 22px;

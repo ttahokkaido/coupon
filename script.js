@@ -137,8 +137,6 @@ const lbTitle     = document.getElementById('lb-title');
 const lbSub       = document.getElementById('lb-sub');
 const lbUsedBtn   = document.getElementById('lb-used-btn');
 const lbClose     = document.getElementById('lb-close');
-const lbPrev      = document.getElementById('lb-prev');
-const lbNext      = document.getElementById('lb-next');
 const counter     = document.getElementById('counter');
 const rulesOverlay = document.getElementById('rules-overlay');
 const rulesTitle   = document.getElementById('rules-title');
@@ -228,8 +226,6 @@ function updateLightbox() {
   lbSub.textContent   = c.nameEN + ' ／ ' + categoryLabels[c.category];
   lbUsedBtn.textContent = used ? '✔ 已使用' : '標記為已使用';
   lbUsedBtn.className   = 'lb-used-btn' + (used ? ' done' : '');
-  lbPrev.disabled = lightboxIndex === 0;
-  lbNext.disabled = lightboxIndex === filteredList.length - 1;
 }
 
 function toggleUsed() {
@@ -246,12 +242,6 @@ function toggleUsed() {
 
 lbClose.addEventListener('click',   closeLightbox);
 lbUsedBtn.addEventListener('click', toggleUsed);
-lbPrev.addEventListener('click', () => {
-  if (lightboxIndex > 0) { lightboxIndex--; lbReset(); updateLightbox(); }
-});
-lbNext.addEventListener('click', () => {
-  if (lightboxIndex < filteredList.length - 1) { lightboxIndex++; lbReset(); updateLightbox(); }
-});
 
 // Close when tapping backdrop
 lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
@@ -359,13 +349,6 @@ lbImg.addEventListener('touchmove', e => {
 }, { passive: false });
 
 lbImg.addEventListener('touchend', e => {
-  if (e.touches.length === 0 && !isMultiTouch && lbScale <= 1) {
-    const dx = e.changedTouches[0].clientX - swipeStartX;
-    if (Math.abs(dx) > 55) {
-      if (dx < 0 && lightboxIndex < filteredList.length - 1) { lightboxIndex++; lbReset(); updateLightbox(); }
-      if (dx > 0 && lightboxIndex > 0)                       { lightboxIndex--; lbReset(); updateLightbox(); }
-    }
-  }
   if (e.touches.length < 2) isMultiTouch = false;
   if (lbScale < 1) lbReset(true);
 }, { passive: true });
